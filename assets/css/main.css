@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 46px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    line-height: 46px;
+}
+
+.menuItem,
+.menuList {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 24px;
+    transition: 0.1s;
+    position: relative;
+    cursor: pointer;
+}
+
+.menuItem:hover,
+.menuList:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.menuList:hover .subMenu {
+    display: block;
+}
+
+.subMenu {
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    width: 160px;
+    left: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.subMenuItem > a {
+    font-size: 14px;
+    padding: 0 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.subMenuItem:hover {
+    width: 100%;
+    background-color: #ccc;
+}
+
+.search {
+    line-height: 46px;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+.search:hover {
+    background-color: #f44336;
+}
+
+.btnSearch {
+    color: #fff;
+    font-weight: 800;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    background: url('../img/la.jpg') top center / cover no-repeat;
+}
+
+.sliderTitle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    bottom: 0;
+    text-align: center;
+    padding: 32px 0;
+}
+.title{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.subTitle {
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+.aboutBox,
+.tour {
+    padding: 64px 16px;
+    width: 800px;
+    margin: auto;
+}
+
+.aboutTitle,
+.aboutSubTitle {
+    text-align: center;
+}
+
+.aboutTitle {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+
+.aboutSubTitle {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #666;
+    font-style: italic;
+}
+
+.aboutContent {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.listMember {
+    margin: 32px 0;
+    display: flex;
+}
+
+.member {
+    width: 33.33333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memberName {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.memberImg {
+    width: 60%;
+    border-radius: 4px;
+}
+
+.tourBox {
+    background-color: #000;
+    color: #666;
+}
+
+.tourTitle {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.tourSubTitle {
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+}
