@@ -7,6 +7,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.header {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
 .nav {
     width: 100%;
     height: 46px;
@@ -32,7 +40,7 @@
     cursor: pointer;
 }
 
-.menuItem:hover,
+.menuItem:hover, 
 .menuList:hover {
     background-color: #ccc;
     color: #000;
@@ -57,7 +65,7 @@
     font-size: 14px;
     padding: 0 16px;
     color: #000;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .subMenuItem:hover {
@@ -85,6 +93,7 @@
     width: 100%;
     padding-top: 50%;
     background: url('../img/la.jpg') top center / cover no-repeat;
+    margin-top: 46px;
 }
 
 .sliderTitle {
@@ -127,7 +136,8 @@
     margin: 10px 0;
 }
 
-.aboutSubTitle {
+.aboutSubTitle,
+.contactSubTitle {
     margin: 15px 0;
     font-size: 15px;
     color: #666;
@@ -165,19 +175,216 @@
 
 .tourBox {
     background-color: #000;
-    color: #666;
 }
 
 .tourTitle {
+    color: #fff;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 4px;
+    margin: 15px 0;
 }
 
 .tourSubTitle {
+    color: #777;
     font-size: 15px;
     text-align: center;
     font-style: italic;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.tourMonth {
+    background-color: #fff;
+}
+
+.tourRow {
+    list-style: none;
+    font-size: 15px;
+    padding: 10px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+
+.tourStatus {
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 2px 8px;
+}
+
+.tourNum {
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 2px 8px;
+    margin-right: 20px;
+}
+
+.row3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxTour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    width: 33%;
+    margin: 32px -4px;
+    padding: 0 4px;
+}
+
+.boxImg {
+    width: 100%;
+    display: block;
+}
+.boxImg:hover {
+    opacity: 0.6;
+}
+
+.boxInfo {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.boxTitle {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.boxSubTitle {
+    color: #919191;
+    margin: 15px 0;
+    display: block;
+}
+
+.boxContent {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.boxBtn {
+    font-size: 15px;
+    margin-top: 15px;
+    color: #fff;
+    border: none;
+    background-color: #000;
+    padding: 10px 16px;
+}
+.boxBtn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.contact {
+    width: 800px;
+    margin: auto;
+    padding: 74px 16px;
+}
+
+.contactTitle {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.contactTitle,
+.contactSubTitle {
+    text-align: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.contactInfo,
+.contactSend {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoItem {
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.infoItem > i {
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.contactInput,
+.contactInput2 {
+    border: 1px solid #ccc!important;
+    padding: 10px 8px;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.btnSubmit {
+    border: none;
+    font-size: 15px;
+    color: #919191;
+    background-color: #000;
+    padding: 10px 16px;
+    margin: 8px 0 16px;
+    float: right;
+}
+.btnSubmit:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.mapImg {
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(50%);
+}
+
+.socials {
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialItems {
+    display: flex;
+}
+
+.item {
+    margin: 0 4px;
+    font-size: 22px;
+    opacity: .6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.item:hover {
+    transform: translateY(-8px);
+}
+
+.socialText {
+    font-size: 15px;
+    opacity: .6;
+    margin: 15px 0;
+}
+
+
+.socialText > a {
+    color: #000;
 }
