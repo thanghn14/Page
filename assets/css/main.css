@@ -41,7 +41,10 @@
 }
 
 .menuItem:hover, 
-.menuList:hover {
+.menuList:hover,
+.btnClose:hover,
+.close:hover,
+.btnPay:hover {
     background-color: #ccc;
     color: #000;
 }
@@ -386,4 +389,118 @@
 
 .socialText > a {
     color: #000;
+}
+
+.payMain.open {
+    display: block;
+    transform: translateY(0);
+}
+
+.payMain {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.payForm {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+}
+
+.subForm {
+    position: absolute;
+    width: 900px;
+    background-color: #fff;
+}
+
+.payHead {
+    position: relative;
+}
+
+.payHeadTitle {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    padding: 46px 16px;
+    background-color: #009688;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.close {
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    padding: 10px 14px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.payBody {
+    padding: 16px;
+}
+
+.payInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.payLabel {
+    font-size: 15px;
+}
+
+.payInput {
+    margin: 15px 0;
+    padding: 10px 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}
+
+.btnPay {
+    width: 100%;
+    border: none;
+    color: #fff;
+    background-color: #009688;
+    padding: 14px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btnPay > i {
+    font-size: 22px;
+}
+
+.payFooter {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnClose {
+    font-size: 15px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #f44336;
+    border: none;
+    cursor: pointer;
+}
+
+.btnHelp {
+    align-self: center;
+}
+
+.btnHelp > a {
+    color: #2196F3;
 }
