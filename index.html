@@ -109,7 +109,7 @@
                   <p class="boxContent">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="boxBtn">Buy Tickets</button>
+                  <button class="boxBtn js-buy">Buy Tickets</button>
                 </div>
               </div>
 
@@ -121,7 +121,7 @@
                   <p class="boxContent">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="boxBtn">Buy Tickets</button>
+                  <button class="boxBtn js-buy">Buy Tickets</button>
                 </div>
               </div>
 
@@ -133,7 +133,7 @@
                   <p class="boxContent">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="boxBtn">Buy Tickets</button>
+                  <button class="boxBtn js-buy">Buy Tickets</button>
                 </div>
               </div>
             </div>
@@ -178,7 +178,9 @@
                 placeholder="Message"
                 required
               />
-              <div class="contactBtn"><button class="btnSubmit" type="submit">SEND</button></div>
+              <div class="contactBtn">
+                <button class="btnSubmit" type="submit">SEND</button>
+              </div>
             </div>
           </div>
         </div>
@@ -186,7 +188,9 @@
         <div class="map">
           <img class="mapImg" src="./assets/img/map.jpg" alt="" />
         </div>
+      </div>
 
+      <div class="footer">
         <div class="socials">
           <div class="socialItems">
             <i class="item bi bi-facebook"></i>
@@ -200,7 +204,33 @@
         </div>
       </div>
 
-      <div class="footer"></div>
+      <div class="payMain">
+        <div class="payForm">
+          <div class="subForm">
+            <div class="payHead">
+              <div class="payHeadTitle"><i class="bi bi-bag-check-fill"></i> Tickets</div>
+              <div class="close"><i class="bi bi-x"></i></div>
+            </div>
+            <div class="payBody">
+              <div class="payInfo">
+                <label for="quantity" class="payLabel"><i class="bi bi-cart-check-fill"></i> Tickets, $15 per person</label>
+                <input id="quantity" class="payInput" type="text" placeholder="How many?" />
+              </div>
+              <div class="payInfo">
+                <label for="mail" class="payLabel"><i class="bi bi-person-check-fill"></i> Send To</label>
+                <input id="mail" class="payInput" type="text" placeholder="Enter email" />
+              </div>
+              <button class="btnPay">PAY <i class="bi bi-check"></i></button>
+            </div>
+            <div class="payFooter">
+              <button class="btnClose">Close</button>
+              <p class="btnHelp">Need <a href="">help?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="./assets/js/pay.js"></script>
   </body>
 </html>
