@@ -419,6 +419,7 @@
     position: absolute;
     width: 900px;
     background-color: #fff;
+    animation: modalDown ease 0.3s;
 }
 
 .payHead {
@@ -483,9 +484,9 @@
 }
 
 .payFooter {
-    padding: 16px;
+    padding: 16px 0 32px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .btnClose {
@@ -503,4 +504,15 @@
 
 .btnHelp > a {
     color: #2196F3;
+}
+
+@keyframes modalDown {
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
